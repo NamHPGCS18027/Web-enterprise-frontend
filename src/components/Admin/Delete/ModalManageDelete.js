@@ -6,6 +6,7 @@ function ModalManageDelete({ setOpenModalDelete , data}) {
   const [reloadpage,setreloadpage] = useState(false);
   const deleteact = () => {
     var myHeaders = new Headers();
+    myHeaders.append("access-control-allow-origin" , "*")
     myHeaders.append("Authorization", "Bearer " + localStorage.getItem("accessToken"));
     myHeaders.append("Content-Type", "application/json");
 

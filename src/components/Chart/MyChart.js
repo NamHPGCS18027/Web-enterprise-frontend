@@ -55,6 +55,7 @@ export const MyChart = () => {
     }
     const download = () => {
         var myHeaders = new Headers();
+        myHeaders.append("access-control-allow-origin" , "*")
         myHeaders.append("Authorization", "Bearer " + localStorage.getItem("accessToken"));
 
         var requestOptions = {

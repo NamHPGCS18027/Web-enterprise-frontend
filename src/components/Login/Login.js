@@ -18,6 +18,7 @@ function Login() {
 
     const login = () => {
         var myHeaders = new Headers();
+        myHeaders.append("access-control-allow-origin" , "*")
         myHeaders.append("Content-Type", "application/json");
 
         var raw = JSON.stringify({
@@ -31,7 +32,6 @@ function Login() {
             body: raw,
             redirect: 'follow'
         };
-
         fetch(Url+"/api/AuthManagement/Login", requestOptions)
         .then(response => {
             if (response.ok) {

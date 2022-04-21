@@ -21,6 +21,7 @@ function UploadIdea() {
 
   const sumbmitidea = () => {
     var myHeaders = new Headers();
+    myHeaders.append("access-control-allow-origin" , "*")
     myHeaders.append("Authorization", "Bearer " + localStorage.getItem("accessToken"));
    
     let formdata = new FormData()
@@ -51,6 +52,7 @@ function UploadIdea() {
 
   useEffect(() => {
     var myHeaders = new Headers();
+    myHeaders.append("access-control-allow-origin" , "*")
     myHeaders.append("Authorization", "Bearer " + localStorage.getItem("accessToken"));
     myHeaders.append("Content-Type", "application/json");
     var requestOptions = {
@@ -70,6 +72,7 @@ function UploadIdea() {
 
   useEffect(() => {
     var myHeaders = new Headers();
+    myHeaders.append("access-control-allow-origin" , "*")
     myHeaders.append("Authorization", "Bearer " + localStorage.getItem("accessToken"));
     myHeaders.append("Content-Type", "application/json");
     var requestOptions = {

@@ -18,6 +18,7 @@ function PostDetail({ setopendetail, data }) {
 
   useEffect(() => {
     var myHeaders = new Headers();
+    myHeaders.append("access-control-allow-origin" , "*")
     myHeaders.append("Authorization", "Bearer " + localStorage.getItem("accessToken"));
     myHeaders.append("Content-Type", "application/json");
 
@@ -36,6 +37,7 @@ function PostDetail({ setopendetail, data }) {
   const sumitcmnt = () => {
     setpostId(postId)
     var myHeaders = new Headers();
+    myHeaders.append("access-control-allow-origin" , "*")
     myHeaders.append("Authorization", "Bearer " + localStorage.getItem("accessToken"));
     myHeaders.append("Content-Type", "application/json");
 
@@ -67,6 +69,7 @@ function PostDetail({ setopendetail, data }) {
   //cmt
   useEffect(() => {
     var myHeaders = new Headers();
+    myHeaders.append("access-control-allow-origin" , "*")
     myHeaders.append("Authorization", "Bearer " + localStorage.getItem("accessToken"));
     myHeaders.append("Content-Type", "application/json");
 
@@ -104,6 +107,7 @@ function PostDetail({ setopendetail, data }) {
   //vote
   const upvote = () => {
     var myHeaders = new Headers();
+    myHeaders.append("access-control-allow-origin" , "*")
     myHeaders.append("Authorization", "Bearer " + localStorage.getItem("accessToken"));
     myHeaders.append("Content-Type", "application/json");
 
@@ -129,6 +133,7 @@ function PostDetail({ setopendetail, data }) {
   }
   const downVote = () => {
     var myHeaders = new Headers();
+    myHeaders.append("access-control-allow-origin" , "*")
     myHeaders.append("Authorization", "Bearer " + localStorage.getItem("accessToken"));
     myHeaders.append("Content-Type", "application/json");
 
@@ -155,6 +160,7 @@ function PostDetail({ setopendetail, data }) {
   //vote
   useEffect(() => {
     var myHeaders = new Headers();
+    myHeaders.append("access-control-allow-origin" , "*")
     myHeaders.append("Authorization", "Bearer " + localStorage.getItem("accessToken"));
 
     var requestOptions = {
@@ -173,6 +179,7 @@ function PostDetail({ setopendetail, data }) {
 
   useEffect(() => {
     var myHeaders = new Headers();
+    myHeaders.append("access-control-allow-origin" , "*")
     myHeaders.append("Authorization", "Bearer " + localStorage.getItem("accessToken"));
 
     var requestOptions = {

@@ -20,6 +20,7 @@ function ModalDeadlineEdit({ setopenModalDeadlineEdit , data}) {
   /// update topic
   const Updatetopic = () => {
     var myHeaders = new Headers();
+    myHeaders.append("access-control-allow-origin" , "*")
     myHeaders.append("Authorization" , "Bearer "+ localStorage.getItem("accessToken"));
     myHeaders.append("Content-Type", "application/json");
     

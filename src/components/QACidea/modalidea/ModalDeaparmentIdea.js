@@ -10,6 +10,7 @@ function ModalDepartmentIdea({ setOpenModalDepartmentIdea ,data }) {
 
   const Approcepost = () => {
     var myHeaders = new Headers();
+    myHeaders.append("access-control-allow-origin" , "*")
     myHeaders.append("Authorization", "Bearer " + localStorage.getItem("accessToken"));
     myHeaders.append("Content-Type", "application/json");
 
@@ -37,6 +38,7 @@ function ModalDepartmentIdea({ setOpenModalDepartmentIdea ,data }) {
 
   const Reject = () => {
     var myHeaders = new Headers();
+    myHeaders.append("access-control-allow-origin" , "*")
     myHeaders.append("Authorization", "Bearer " + localStorage.getItem("accessToken"));
     myHeaders.append("Content-Type", "application/json");
 

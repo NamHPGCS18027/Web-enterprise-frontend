@@ -1,1 +1,1 @@
-export const Url = process.env.NODE_ENV !=='production' ? 'https://localhost:5001':'http://quangdungnguyen-001-site1.ctempurl.com'
+export const Url = process.env.NODE_ENV !=='production' ? 'http://quangdungnguyen-001-site1.ctempurl.com':'http://quangdungnguyen-001-site1.ctempurl.com'
